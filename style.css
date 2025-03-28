@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* It will just make changes in heading  */
+#heading {
+    color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    min-height: 10vh;
+}
+
+/* It will just make change in body except heading */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+/* It will beautify only textarea which is at left side */
+#markdown-input {
+    background-color: #423e3e;
+    font-size: x-large;
+    height: 90vh;
+    width: 100vw;
+    overflow-y: auto;
+}
+
+/* It will beautify only output value which is at right side */
+#output-id {
+    background-color: #423e3e;
+    height: 90vh;
+    width: 100vw;
+    overflow-y: auto;
+}
+
+#display-content {
+    margin-left: 15px;
+    overflow-y: auto;
+}
+
+/* CSS to make responsive */
+@media(max-width: 1000px) {
+    h1 {
+        height: 10vh;
+        width: 100vw;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        min-width: 100vw;
+    }
+
+    #markdown-input {
+        background-color: #8a2be2;
+        min-height: 45vh;
+        overflow-y: auto;
+        width: 100vw;
+    }
+    
+    #output-id {
+        background-color: yellow;
+        min-height: 45vh;
+        overflow-y: auto;
+        width: 100vw;
+    }
+}
